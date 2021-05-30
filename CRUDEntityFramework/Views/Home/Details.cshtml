@@ -1,0 +1,28 @@
+﻿@model CRUDEntityFramework.Models.Usuario
+
+@{
+    ViewData["Title"] = "Detalle usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="card col-12">
+        <div class="card-border">
+            <div class="card-header">
+                <h3><strong>Detalle de Usuarios</strong></h3>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Nombre: </strong>@Html.DisplayFor(m => m.Nombre)</li>
+                <li class="list-group-item"><strong>Email: </strong>@Html.DisplayFor(m => m.Correo)</li>
+                <li class="list-group-item"><strong>Password: </strong>@Html.DisplayFor(m => m.Password)</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
